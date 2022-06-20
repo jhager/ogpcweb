@@ -1,0 +1,29 @@
+- description: Sustaining Sponsors
+  class: sustaining
+  sponsors:
+    - name: Western Oregon University
+      url: https://www.wou.edu/
+      img: assets/images/sponsors/WOU.jpg
+    - name: Brainium
+      url: https://brainium.com/
+      img: assets/images/sponsors/brainium.png
+- description: Award Sponsors
+  sponsors:
+    - name: Telestream
+      url: https://www.telestream.net/telestream-home.htm
+      img: assets/images/sponsors/telestream.png
+    - name: Microsoft Azure
+      url: https://azure.microsoft.com/en-us/
+      img: assets/images/sponsors/azure.png
+- description: Special Thanks To
+  class: thanks
+  sponsors:
+    - name: Oregon Computer Science Teachers Association
+      url: http://oregoncsta.org/
+      img: assets/images/sponsors/ocsta.png
+    - name: TechStart
+      url: https://www.techstart.org/
+      img: assets/images/sponsors/techstart.png
+    - name: Technology Association of Oregon
+      url: https://www.techoregon.org/
+      img: assets/images/sponsors/tao.png

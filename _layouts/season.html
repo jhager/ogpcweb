@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="season">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }} - {{ page.theme }}</h1>
+  {%- endif -%}
+
+  {%- if page.logo -%}
+    {% assign imageName = '/assets/images/season-logos/' | append: page.logo %}
+    {% assign altText = page.theme | default: 'Season' | append: ' logo' %}
+    <img class="theme-logo mx-auto d-block" src="{{ '/assets/images/season-logos/' | append: page.logo | relative_url }}" alt="{{ page.theme }}" width="{% imagesize imageName:width?width=500 %}" height="{% imagesize imageName:height?width=500 %}"/>
+  {%- endif -%}
+  
+  {{ content }}
+</article>

@@ -1,0 +1,250 @@
+@import '_ogpc-general.scss';
+
+article.season {
+    img.theme-logo {
+        max-width:100%;
+        height: auto;
+    }
+} 
+
+h1.page-heading {
+    margin-top: 0;
+}
+
+.site-branding img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.navbar-light {
+  color: $primary;
+}
+
+#primary-nav {
+  background: $primary;
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-family: $title-stack;
+  letter-spacing: 1px;
+  padding: 0;
+  box-shadow: $shadow-down;
+
+  button.navbar-toggler {
+    margin: 10px 0;
+    border-color: rgba(255, 255, 255, 0.9);
+    border-width: 2px;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &[aria-expanded=true] .navbar-toggler-icon {
+      transform: rotate(90deg);
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+
+  .navbar-collapse {
+    background-color: white;
+    font-size: 1.15rem;
+
+    .navbar-nav {
+      padding-top: 4px;
+
+      .current {
+        padding: 8px 10px;
+      }
+
+      a.nav-link {
+        color: $primary;
+        padding: 8px 10px;
+      } 
+
+      a.nav-link.active {
+        color: #444;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    border-left: 1px solid #ccc;
+    font-size: 1.15rem;
+
+    .dropdown-item {
+      color: $primary;
+      background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #primary-nav {
+    #navbar-toggler-container {
+      display: none;
+    }
+
+    .navbar-collapse {
+      font-size: 1.25rem;
+      background-color: transparent;
+
+      .navbar-nav {
+        
+        a.nav-link {
+          color: white;
+        }
+        .nav-item:first-of-type *
+        {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      margin-top: 0px;
+      padding-top: 18px;
+      border: 1px solid #000;
+      background: $gray-100;
+      color: $primary;
+      box-shadow: $shadow-down;
+
+      .dropdown-item {
+        background: $gray-100;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.container > * >  p > img {
+  margin: 1rem auto;
+  display: block;
+  max-width: 100%;
+  border: 1px solid $gray-800;
+}
+
+main a {
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  max-width: fit-content;
+  border-radius: 0px;
+  padding: 10px 30px;
+  background: $primary;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: $shadow-down;
+  margin: 0 auto;
+
+  &:hover {
+    color: white;
+    border: 1px solid black;
+  }
+}
+
+.btn-dark {
+  background: $gray-900;
+  &:hover {
+    color: white;
+    border: 1px solid $primary;
+  }
+}
+
+.btn-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 30px;
+
+  p {
+    flex: none;
+    margin: 0;
+    a {
+      white-space: nowrap;
+    }
+  }
+}
+
+.yt-embed {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: block;
+  border: 1px solid $gray-800;
+}
+
+.imagegroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 30px;
+
+  p {
+    flex: 1;
+    img {
+      border: 1px solid $gray-800;
+    }
+  }
+}
+
+.home > h1 + h2 {
+  margin-top: 0;
+}
+
+.sponsor-block {
+  text-align: center;
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 30px;
+    padding: 0;
+    padding-top: 1rem;
+  
+    li {
+      list-style: none;
+      flex: none;
+      
+      img {
+        max-width: 300px;
+        max-height: 100px;
+      }
+
+      img.sustaining {
+        @media (min-width: 768px) {
+          max-width: 400px;
+          max-height: 150px;
+        }
+      }
+
+      img.thanks {
+        max-width: 200px;
+        max-height: 80px;
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid #444;
+  box-shadow: $shadow-up;
+}
+
+@import '_ogpc-nav.scss';

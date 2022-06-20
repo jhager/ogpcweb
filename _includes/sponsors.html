@@ -1,0 +1,21 @@
+
+<div class="sponsor-block">
+
+<h2>{{include.header-text | default: 'OGPC is made possible by support from'}}</h2>
+
+{%- for sponsorLevel in site.data.sponsors -%}
+<h3>{{sponsorLevel.description}}</h3>
+
+<ul class="sponsor-list">
+  {%- for sponsor in sponsorLevel.sponsors -%}
+  <li>
+    <a href="{{ sponsor.url }}">
+      <img class="{{ sponsorLevel.class }}" src="{{ sponsor.img | relative_url }}" alt="{{ sponsor.name | escape }}"/>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>
+
+{%- endfor -%}
+
+</div>

@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-stack;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1.83em;
+}
+
+
+h2 {
+  font-size: 2.25rem;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-top: 1.25em;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+        color: $primary;
+        text-decoration: underline;
+    }
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: $body-stack;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

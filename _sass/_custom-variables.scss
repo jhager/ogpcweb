@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Haversack-OGPC-Semibold';
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/Haversack-OGPC-Semibold.woff2") format('woff2');
+}
+@font-face {
+    font-family: 'Haversack-OGPC-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/Haversack-OGPC-Regular.woff2") format('woff2');
+}
+
+
+$title-stack: Haversack-OGPC-Regular,"Source Sans Pro", Helvetica, Arial, sans-serif;
+
+$body-stack: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+$primary:       #31baff;
+$secondary:     #0097e4 !default;
+
+$shadow-down: 0px 3px 5px 1px rgba(0, 0, 0 , 0.15);
+$shadow-up: 0px -1px 5px 1px rgba(0, 0, 0 , 0.15);
