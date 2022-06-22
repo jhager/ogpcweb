@@ -20,8 +20,8 @@
 
 title: OGPC
 email: your-email@example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "https://ogpc.github.io"
+url: "ogpcweb"
 
 # Build settings
 plugins:
