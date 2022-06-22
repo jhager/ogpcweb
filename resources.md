@@ -97,7 +97,7 @@ A card game where you brainstorm about game design! [Check it out here](gamestor
 
 #### [EXTRA CREDITS](https://www.youtube.com/user/ExtraCreditz)
 
-![Extra Credits Youtube channel](/assets/images/extra-credits.jpg){: .float-md-end .col-md-4 .ms-md-2}
+![Extra Credits Youtube channel](assets/images/extra-credits.jpg){: .float-md-end .col-md-4 .ms-md-2}
 
 Hands down, one of the best resources out there for learning about designing games is the web series Extra Credits. They have 12+ seasons of episodes that cover a wide range of topics. [This playlist](https://www.youtube.com/playlist?list=PLjCY8StB1MxNkr-T3_ZGQ0o2dx7cWpz1N) contains some of the videos that we think provide the most bang for the buck for beginning designers. The first 4 videos especially should be considered mandatory viewing!
 {: .clearfix }

@@ -20,8 +20,8 @@
 
 title: OGPC
 email: your-email@example.com
-baseurl: "https://ogpc.github.io"
-url: "ogpcweb"
+baseurl: "/ogpcweb"
+url: "https://ogpc.github.io"
 
 # Build settings
 plugins:
