@@ -1,5 +1,7 @@
 @import '_ogpc-general.scss';
 
+@import '_ogpc-nav.scss';
+
 article.season {
     img.theme-logo {
         max-width:100%;
@@ -246,5 +248,3 @@ footer {
   border-top: 1px solid #444;
   box-shadow: $shadow-up;
 }
-
-@import '_ogpc-nav.scss';
