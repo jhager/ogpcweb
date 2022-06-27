@@ -1,16 +1,13 @@
 ---
 layout: page
 title: Seasons
+linktitle: Seasons
 ---
 
-{%- if site.seasons.size > 0 -%}
-<ul class="post-list">
-    {%- for season in site.seasons -%}
-    <li>
-      <a class="post-link" href="{{ season.url | relative_url }}">
-      {{ season.title | escape }} - {{ season.theme }}
-      </a>
-    </li>
-    {%- endfor -%}
-</ul>
-{%- endif -%}
+Each academic year brings a new OGPC Season. These begin in the fall when the theme is announced.
+Teams then work to develop a game project they will show off and have judged at the Main Event in spring.
+
+Each season has slightly different rules and judging criteria. You can check out a list of OGPC seasons
+below.
+
+{% include season-list.html %} 
