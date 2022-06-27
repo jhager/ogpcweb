@@ -2,6 +2,12 @@
 
 @import '_ogpc-nav.scss';
 
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: $footer-height; 
+}
+
 article.season {
     img.theme-logo {
         max-width:100%;
@@ -245,6 +251,12 @@ main a {
 }
 
 footer {
+  padding-top: 25px;
+  padding-bottom: 10px;
   border-top: 1px solid #444;
   box-shadow: $shadow-up;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height; 
 }

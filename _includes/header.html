@@ -11,46 +11,46 @@
       </a>
     </div>
   </div>
-  <nav id="primary-nav" class="navbar my-2 navbar-expand-lg navbar-light">
-    <div id="navbar-toggler-container" class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="container">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        {%- for path in page_paths -%}
-        {%- if path == "seasons.md" -%}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-            aria-expanded="false">Seasons</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{% link seasons.md %}">How seasons work</a></li>
-            {%- for season in site.seasons -%}
-            <li><a class="dropdown-item" href="{{ season.url | relative_url }}">{{season.title}}</a></li>
-            {%- endfor -%}
-          </ul>
-        </li>
-        {%- else -%}
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if my_page.title -%}
-        <li class="nav-item">
-          {%- if page.url == my_page.url -%}
-          <div class="current">{{ my_page.title | escape }}</div>
-          {%- else -%}
-          <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {%- endif -%}
-        </li>
-        {%- endif -%}
-        {%- endif -%}
-        {%- endfor -%}
-        <li class="nav-item">
-          <a class="nav-link" href="https://tms.ogpc.info/">Teams & Games</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </nav>
 </header>
+<nav id="primary-nav" class="navbar my-2 navbar-expand-lg navbar-light">
+  <div id="navbar-toggler-container" class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="container">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      {%- for path in page_paths -%}
+      {%- if path == "seasons.md" -%}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Seasons</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="{% link seasons.md %}">How seasons work</a></li>
+          {%- for season in site.seasons -%}
+          <li><a class="dropdown-item" href="{{ season.url | relative_url }}">{{season.title}}</a></li>
+          {%- endfor -%}
+        </ul>
+      </li>
+      {%- else -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+      {%- if my_page.title -%}
+      <li class="nav-item">
+        {%- if page.url == my_page.url -%}
+        <div class="current">{{ my_page.title | escape }}</div>
+        {%- else -%}
+        <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {%- endif -%}
+      </li>
+      {%- endif -%}
+      {%- endif -%}
+      {%- endfor -%}
+      <li class="nav-item">
+        <a class="nav-link" href="https://tms.ogpc.info/">Teams & Games</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
