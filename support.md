@@ -6,14 +6,13 @@ title: Support
 OGPC could not happen without the generous donations of time and money by individuals and companies.
 Here are ways you can help.
 
----
 <div class="btn-set" id="categories" markdown="1">
 
 [Volunteer](#volunteer){: .btn .btn-dark}
 
-[Shop With Amazon](#shop-with-amazon-smile){: .btn .btn-dark}
-
 [Sponsor](#sponsor){: .btn .btn-dark}
+
+[Shop With Amazon](#shop-with-amazon-smile){: .btn .btn-dark}
 
 </div>
 ---

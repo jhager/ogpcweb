@@ -11,12 +11,15 @@ body {
 article.season {
     img.theme-logo {
         max-width:100%;
+        max-height:300px;
+        width: auto;
         height: auto;
+        margin-bottom: 1.5em;
     }
 } 
 
 h1.page-heading {
-    margin-top: 0;
+    margin-top: 1.2em;
 }
 
 .site-branding img {
