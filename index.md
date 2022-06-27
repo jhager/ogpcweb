@@ -14,7 +14,7 @@ title: Oregon Game Project Challenge
 The Main Event for season 15 was May 14th at Western Oregon University. Check the
 [Season 15 page](seasons/2022) for the theme and details about this year’s competition.
 
-Brand new to OGPC? Check the [Participate](participate) page to learn how to get involved.
+Brand new to OGPC? Check the [Compete]({% link compete.md %}) page to learn how to get involved.
 
 ---
 

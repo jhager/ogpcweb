@@ -41,7 +41,7 @@ collections:
 # seasons.md is always replaced with a drop down for seasons
 bootstrap:
   header_pages:
-    - participate.md
+    - compete.md
     - seasons.md
     - resources.md
     - support.md
