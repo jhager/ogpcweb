@@ -146,6 +146,7 @@ main a {
 }
 
 .btn {
+  box-sizing: content-box;
   display: block;
   max-width: fit-content;
   border-radius: 0px;
