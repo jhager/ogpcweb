@@ -9,10 +9,10 @@ title: Oregon Game Project Challenge
 # OGPC
 {: .d-none}
 
-## SEASON 15 IS COMPLETE
+## SEASON 16 (2022-2023) STARTS SOON
 
-The Main Event for season 15 was May 14th at Western Oregon University. Check the
-[Season 15 page](seasons/2022) for the theme and details about this year’s competition.
+This year's OGPC will launch in early November. [Get on our mailing list]({% link contact.md %}) to
+get notified when the theme and date of the Main Event are announced.
 
 Brand new to OGPC? Check the [Compete]({% link compete.md %}) page to learn how to get involved.
 
