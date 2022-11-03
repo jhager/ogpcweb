@@ -11,7 +11,7 @@ title: Oregon Game Project Challenge
 
 ## SEASON 16 (2022-2023) STARTS SOON
 
-This year's OGPC will launch in early November. [Get on our mailing list]({% link contact.md %}) to
+This year's OGPC will launch November 7th. [Get on our mailing list]({% link contact.md %}) to
 get notified when the theme and date of the Main Event are announced.
 
 Brand new to OGPC? Check the [Compete]({% link compete.md %}) page to learn how to get involved.
