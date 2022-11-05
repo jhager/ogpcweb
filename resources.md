@@ -170,6 +170,14 @@ games in terms of their most important feature – player interaction. Here are 
 
 A card game where you brainstorm about game design! [Check it out here](gamestorming).
 
+#### [BAFTA Game Idea Generator](https://ygd.bafta.org/resources/game-idea-generator)
+
+An app that generates random ideas for games. [Give it a try.]([gamestorming](https://ygd.bafta.org/resources/game-idea-generator)).
+
+#### [Game For Change Game Design Curriculum](https://gamesforchange.org/studentchallenge/teachers-resources/)
+
+[Games for Change](https://gamesforchange.org/studentchallenge/) is an online national game design competition. They have a [free, platform agnostic curriculum](https://gamesforchange.org/studentchallenge/teachers-resources/) for teaching game design.
+
 #### [EXTRA CREDITS](https://www.youtube.com/user/ExtraCreditz)
 
 ![Extra Credits Youtube channel](assets/images/extra-credits.jpg){: .float-md-end .col-md-4 .ms-md-2}
@@ -184,11 +192,6 @@ first 4 videos especially should be considered mandatory viewing!
 #### [GAME MAKER’S TOOLKIT](https://www.youtube.com/user/McBacon1337/featured)
 
 A Youtube channel that focuses on deconstructing games to figure out what makes then work (or not).
-
-#### [OGPC GAME DEVELOPMENT VIDEOS](https://www.youtube.com/user/McBacon1337/featured)
-
-Follow Adam and Gabriel as they go from brainstorming and planning to designing and prototyping,
-and finally to creating an entry for OGPC.
 
 [Back to top](#categories){: .btn .btn-dark}
 
