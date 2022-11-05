@@ -1,3 +1,9 @@
+
+.navbar-light {
+  color: $primary;
+}
+
+
 #primary-nav {
   background: $primary;
   color: black;
@@ -78,6 +84,11 @@
         a.nav-link {
           color: white;
         }
+
+        .nav-item.nav-spacer {
+          margin-left: auto;
+        }
+
         .nav-item:first-of-type *
         {
           padding-left: 0;
