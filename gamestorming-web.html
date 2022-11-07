@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Gamestorming | OGPC</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Gamestorming" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://www.ogpc.info/gamestorming-web.html" />
+<meta property="og:url" content="https://www.ogpc.info/gamestorming-web.html" />
+<meta property="og:site_name" content="OGPC" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Gamestorming" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Gamestorming","url":"https://www.ogpc.info/gamestorming-web.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-icons.css"><link type="application/atom+xml" rel="alternate" href="https://www.ogpc.info/feed.xml" title="OGPC" /><link rel="icon" href="/assets/images/ogpc-favicon-32x32.png"
+    sizes="32x32" />
+  <link rel="icon" href="/assets/images/ogpc-favicon-192x192.png"
+    sizes="192x192" />
+  <link rel="apple-touch-icon"
+    href="/assets/images/ogpc-favicon-180x180.png" />
+</head><body class="d-flex flex-column vh-100">
+  <main class="page-content flex-shrink-0" aria-label="Content">
+    <div class="container text-center">
+
+
+      <style>
+        html,
+        body {
+          font-family: "Haversack-OGPC-Regular";
+        }
+
+        body {
+          height: 100vh;
+        }
+
+        #container {
+          text-align: center;
+
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+
+        .btn {
+          font-size: 1rem !important;
+          font-family: "Haversack-OGPC-Regular";
+        }
+
+        .dropdown-menu {
+          background: black;
+          text-align: center;
+        }
+
+        .dropdown-menu:active {
+          text-align: center;
+        }
+
+        .dropdown-item:active {
+          background-color: white;
+        }
+
+        #playerSelect {
+          display: inline-block;
+        }
+
+        #playerSelect .btn {
+          z-index: 5;
+          position: relative;
+        }
+
+        #playerSelect .dropdown-menu {
+          width: 100%;
+          font-family: "Haversack-OGPC-Regular";
+          top: -5px !important;
+          z-index: 1;
+        }
+
+        #playerSelect .dropdown-item {
+          color: #31BAFF;
+        }
+
+        .playerLabel {
+          margin-top: 20px;
+        }
+
+        .card {
+          border: 8px black solid;
+          border-radius: 10px;
+          width: 300px;
+          height: 125px;
+          background: black;
+          padding: 0;
+        }
+
+        .cardInner {
+          border-radius: 6px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 1.5em;
+        }
+
+
+        #settingCardArea {
+          margin: 1.5em 0;
+        }
+
+        #settingCard .cardInner {
+          background: #fee12e;
+        }
+
+        .playerCard .cardInner {
+          background: #31BAFF;
+          color: white;
+        }
+
+        .playerCard {
+          margin: 10px;
+          font-size: 75%;
+
+          border: 5px black solid;
+        }
+
+        @media (min-width: 768px) {
+          .playerCard {
+            font-size: 100%;
+            border: 8px black solid;
+          }
+        }
+      </style>
+
+      <h1 class="mt-3">OGPC Gamestorming</h1>
+
+      <p><a href="/gamestorming.html">Instructions</a></p>
+
+      <div>
+        <button class="btn" id="settingBtn">Draw a Setting</button>
+
+        <div id="settingCardArea" class="row  align-items-center  justify-content-center">
+          <div id="settingCard" class="card d-none">
+            <div class="cardInner">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="dropdown" id="playerSelect">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Draw Cards For...
+        </a>
+        <div id="playerMenu" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#" id="p1">One</a>
+          <a class="dropdown-item" href="#" id="p2">Two</a>
+          <a class="dropdown-item" href="#" id="p3">Three</a>
+          <a class="dropdown-item" href="#" id="p4">Four</a>
+          <a class="dropdown-item" href="#" id="p5">Five</a>
+        </div>
+      </div>
+
+      <div id="playerCardArea" class="container">
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    settingArray = [
+      "space",
+      "wild west",
+      "prehistoric",
+      "wilderness",
+      "fantasy kingdom",
+      "ocean",
+      "sky",
+      "future earth",
+      "modern earth<br/>(pick region)",
+      "historic earth<br/>(pick region)",
+      "mythological earth<br/>(pick region)",
+      "your school",
+    ];
+    actionArray = [
+      //"fly",
+      "sneak or<br/>hide",
+      //"solve",
+      "consume",
+
+      "sabotage",
+      "explore",
+      "teach",
+      "build",
+
+      "collect",
+      "avoid",
+      "jump",
+      "lead",
+
+      "follow",
+      "carry",
+      "ride",
+      "swap",
+
+      "attract or<br/>repel",
+      "grow or<br/>shrink",
+      "throw or<br/>launch",
+      "escape",
+
+      //"talk",
+      "protect",
+      "rescue",
+      "search",
+
+      "combine or<br/>split",
+      "connect",
+      "reveal",
+      "remember",
+      "time or<br/>synchronize",
+    ];
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    (function () {
+      document.getElementById("settingBtn").addEventListener('click', function () {
+        shuffleArray(settingArray);
+        document.querySelector("#settingCard .cardInner").innerHTML = settingArray[0];
+        document.getElementById("settingCard").classList.remove('d-none');
+      });
+
+      let anchors = document.querySelectorAll("#playerMenu a");
+      anchors.forEach( el => {
+        el.addEventListener('click', function (event) {
+          let numPlayers = this.getAttribute('id').replace('p', '');
+          console.log(numPlayers);
+          shuffleArray(actionArray);
+          let cardArea = document.getElementById("playerCardArea");
+          cardArea.innerHTML = "";
+          for (let i = 0; i < numPlayers; i++) {
+            cardArea.innerHTML += "<div class='row playerLabel'><div class='col'>Player " + (i + 1) + '</div>';
+            let cardGroup = "<div class='cardGroup row justify-content-center'>";
+            for (let j = 0; j < 4; j++) {
+              let newCard = '<div class="card playerCard col-3 col-lg-2">';
+              newCard += '<div class="cardInner">' + (actionArray[i * 4 + j]) + '</div></div>'
+              cardGroup += newCard;
+            }
+            cardArea.innerHTML += cardGroup + '</div>';
+          }
+        })
+      });
+    })();
+  </script>
+
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
